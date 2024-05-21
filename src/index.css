@@ -1,0 +1,214 @@
+/* Documents and common uses elements */
+:root{
+  --primary-color: #efefef;
+  --secondary-color: #171717;
+  --accent-color: #0442ae;
+  --font-size-base: 1rem;
+  --font-family-body:  Arial, Helvetica, sans-serif;
+  --global-padding: 8rem;
+  --gap-between: 2rem;
+  --line-height: 1.8rem;
+}
+
+body{
+  font-family: var(--font-family-body);
+  background-color: var(--primary-color);
+  background-image: url('assets/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper{
+  background-color: #efefeff3;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, p, button{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.section-header{
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: var(--secondary-color);
+  opacity: 80%;
+  padding-bottom: 1rem;
+}
+
+.section-header.center-align{
+  text-align: center;
+}
+
+.button-group{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.button{
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: var(--font-size-base);
+  color: var(--primary-color);
+  background-color: var(--accent-color);
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid var(--accent-color);
+  transition: background-color 0.3s ease,  color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+}
+
+.button.secondary{
+  background-color: rgba(255, 255, 255, 0);
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.button.underline{
+  color: var(--accent-color);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid var(--accent-color);
+  border-radius: 0;
+}
+
+.button:hover{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--primary-color);
+}
+
+.button.secondary:hover{
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+.button.underline:hover{
+  border: none;
+  background-color: #dfdfdf00;
+  border-bottom: 2px solid var(--accent-color);
+  opacity: 60%;
+}
+
+/* Styles for individual elements*/
+.hero-container{
+  background-image: url(assets/hero-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+}
+
+.overlay{
+  width:100%;
+  height: 100%;
+  background-color: #171717e0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content-wrapper{
+  padding: var(--global-padding) ;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.hero-header{
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.hero-subheader{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  opacity: 80%;
+}
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+  padding: var(--global-padding);
+  gap: 4rem;
+}
+
+.about-col{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between);
+}
+.about-col.align-center{
+  align-items: center;
+}
+
+.about-image{
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px 0px var(--secondary-color);
+}
+
+.projects-container{
+  padding: var(--global-padding);
+}
+
+.projects-grid-wrapper{
+  padding-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.project-item{
+  width:100%;
+  border-radius: 15px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.299);
+  padding:1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.project-item:hover{
+  background-color: #ececec;
+}
+
+.project-img{
+  width:100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.skills-container{
+  padding: 2rem;
+  position: relative;
+}
+.skills-item-wrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-item{
+  width: 10rem;
+  height: 10rem;
+}
