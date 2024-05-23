@@ -7,13 +7,16 @@ import Contact from "./Contact";
 function App() {
 
   return (
-    <div className="page-wrapper">
+    <div className="background-texture">
+      <div className="page-wrapper">
       <Hero></Hero>
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
       <Contact></Contact>
     </div>
+    </div>
+    
   )
 }
 
