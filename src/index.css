@@ -5,8 +5,8 @@
   --accent-color: #0442ae;
   --font-size-base: 1rem;
   --font-family-body:  Arial, Helvetica, sans-serif;
-  --global-padding: 8rem;
-  --gap-between: 2rem;
+  --global-padding: 10rem;
+  --gap-between: 1.5rem;
   --line-height: 1.8rem;
 }
 
@@ -38,8 +38,11 @@ h1, h2, h3, h4, h5, h6, p, button{
   font-size: 2rem;
   line-height: 2.5rem;
   color: var(--secondary-color);
-  opacity: 80%;
-  padding-bottom: 1rem;
+  padding-bottom: .5rem;
+}
+
+.section-header.iswhite{
+  color: var(--primary-color);
 }
 
 .section-header.center-align{
@@ -193,12 +196,12 @@ h1, h2, h3, h4, h5, h6, p, button{
 
 .project-img{
   width:100%;
-  height: auto;
+  height: 15rem;
   object-fit: fill;
 }
 
 .skills-container{
-  padding: 2rem;
+  padding: 3rem;
   position: relative;
 }
 .skills-item-wrapper{
@@ -211,4 +214,89 @@ h1, h2, h3, h4, h5, h6, p, button{
 .skills-item{
   width: 10rem;
   height: 10rem;
+}
+
+.contact-background{
+  background-image: url('./assets/contact.png');
+  background-position: top;
+  background-size:cover;
+}
+.contact-container{
+  background-image: linear-gradient(to right,#171717,#1717177f);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: var(--global-padding);
+  padding-right: var(--global-padding);
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-between);
+  color: var(--primary-color);
+}
+
+.contact-form{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  width:55%; 
+  gap: 1rem;
+}
+.contact-text-content{
+  width:45%;
+}
+
+.form-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  gap: .3rem;
+}
+.form-item.message{
+  flex-direction: column;
+  justify-content: flex-start;
+}
+input{
+  border-radius: 15px;
+  font-size: 1rem;
+  width:100%;
+  padding: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color:#0442ae0d;
+  border: 2px solid rgba(0, 0, 0, 0.163);
+}
+
+label{
+  font-weight: 700;
+}
+
+.contact-text-content{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-between);
+  padding: 2rem;
+}
+
+.message-input{
+  height: 5rem;
+  width: 100%;
+}
+
+.button.form-button{
+  width:100%;
+  margin: 0;
+}
+
+.social-links-wrapper{
+  display: flex;
+  gap: 3rem;
+}
+
+.social-link{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 250px;
 }

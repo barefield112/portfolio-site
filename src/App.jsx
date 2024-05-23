@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import Skills from "./Skills";
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
+      <Contact></Contact>
     </div>
   )
 }
