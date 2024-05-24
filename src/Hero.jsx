@@ -29,8 +29,8 @@ const Hero = () => {
           <h1 className="hero-header">Gage Barefield : Web Developer</h1>
           <p className="hero-subheader">{output}</p>
           <div className="button-group">
-            <button className="button">Contact Me</button>
-            <button className="button secondary">My Projects</button>
+            <button className="button" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>Contact Me</button>
+            <button className="button secondary" onClick= {()=> document.getElementById('projects').scrollIntoView({behavior: 'smooth'})}>My Projects</button>
           </div>
         </div>
       </div>

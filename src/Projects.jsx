@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 function Projects(){
     return(
         <>
-        <div className="projects-container">
+        <div className="projects-container" id="projects">
             <h2 className="section-header center-align">My Projects</h2>
             <div className="projects-grid-wrapper">
                 <ProjectItem title="GJJ Pooler" imagePath="./src/assets/gjjpooler.png"

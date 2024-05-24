@@ -2,7 +2,7 @@ import image from './assets/gagebarefield3.jpg';
 function About(){
     return(
         <>
-            <div className="about-container">
+            <div className="about-container" id='about'>
                 <div className="about-col">
                     <h2 className="section-header">Who is Gage Barefield</h2>
                     <p className="text-element">I began my programming journey in high school, learning HTML, CSS, and JavaScript in a Website 
