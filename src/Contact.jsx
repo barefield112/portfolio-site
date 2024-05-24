@@ -1,3 +1,6 @@
+import ghIcon from './assets/github.png';
+import liIcon from './assets/linkedi.png';
+import xIcon from './assets/X.svg';
 function Contact(){
     return(
         <div className="contact-background" id="contact">
@@ -13,9 +16,9 @@ function Contact(){
                 <li>Number: <a href="tel:785-280-2756">785-280-2756</a></li>
                 </ul>
                 <div className="social-links-wrapper">
-                    <a href="https://github.com/barefield112" target='_blank'><img className="social-link"src="./src/assets/github.png"></img></a>
-                    <a href="https://www.linkedin.com/in/aaron-barefield-3396b7201/" target='_blank'><img className="social-link" src="./src/assets/linkedi.png"></img></a>
-                    <a href="https://x.com/gbarefield112?s=21" target='_blank'><img className="social-link" src="./src/assets/X.svg"></img></a>
+                    <a href="https://github.com/barefield112" target='_blank'><img className="social-link"src={ghIcon}></img></a>
+                    <a href="https://www.linkedin.com/in/aaron-barefield-3396b7201/" target='_blank'><img className="social-link" src={liIcon}></img></a>
+                    <a href="https://x.com/gbarefield112?s=21" target='_blank'><img className="social-link" src={xIcon}></img></a>
                 </div>
                 
             </div>
