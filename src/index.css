@@ -13,7 +13,7 @@
 /* Global Styles */
 body {
   font-family: var(--font-family-body);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-size: var(--font-size-base);
   line-height: var(--line-height);
   padding: 0;
@@ -249,9 +249,10 @@ h1, h2, h3, h4, h5, h6, p, button {
 
 .skills-item-wrapper {
   position: relative;
-  width: 100%;
+  width: 125%;
   display: flex;
   justify-content: space-around;
+  transition: all 0.2 ease-out;
 }
 
 .skills-item {
@@ -473,4 +474,14 @@ a:hover {
     width: 5rem;
     height: 5rem;
   }
+  @media (orientation: landscape) {
+    .hero-content-wrapper{
+      gap: 1.5rem;
+    }
+    .hero-header {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
 }
+
