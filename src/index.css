@@ -194,6 +194,7 @@ h1, h2, h3, h4, h5, h6, p, button {
 
 .about-col.align-center {
   align-items: center;
+  justify-content: center;
 }
 
 .about-image {
@@ -245,19 +246,33 @@ h1, h2, h3, h4, h5, h6, p, button {
 .skills-container {
   padding: 3rem;
   position: relative;
+  overflow: hidden; /* Hide overflowing content */
 }
 
 .skills-item-wrapper {
   position: relative;
-  width: 125%;
+  width: 200vw;
   display: flex;
   justify-content: space-around;
-  transition: all 0.2 ease-out;
+  animation: scroll 40s linear infinite; 
 }
 
 .skills-item {
   width: 8rem;
   height: 8rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100vw);
+  }
+  100%{
+    transform: translateX(0%);
+  }
 }
 
 /* Contact Section */
@@ -294,7 +309,6 @@ label {
   width: 45%;
   flex-direction: column;
   gap: 1.5rem;
-  padding: 2rem;
   justify-content: center;
 }
 
@@ -387,9 +401,9 @@ a:hover {
   }
 
   .about-image {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 250px;
+    width: 80vw;
+    height: 20rem;
+    object-position: center 30%;
   }
 
   .navbar-link-wrapper {
@@ -408,14 +422,14 @@ a:hover {
   }
 
   .contact-text-content {
-    width: 65%;
+    width: 80%;
   }
 }
 
 @media (max-width: 520px) {
   :root {
     --font-size-base: 1rem;
-    --global-padding: 2rem;
+    --global-padding: 1.3rem;
     --line-height: 1.4rem;
     --gap-between: 1.3rem;
   }
@@ -427,7 +441,11 @@ a:hover {
   .Navbar {
     padding: 1.5rem 2rem;
   }
-
+  .about-image {
+    width: 80vw;
+    height: 15rem;
+    object-position: center 30%;
+  }
   .navbar-link-wrapper {
     gap: 1rem;
     font-size: 1rem;
