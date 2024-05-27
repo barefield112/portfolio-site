@@ -8,7 +8,8 @@ function About(){
                     <p className="text-element">I began my programming journey in high school, learning HTML, CSS, and JavaScript in a 
                     Website Design class and building websites for faculty and sports teams. At Central Methodist University, 
                     I deepened my knowledge in Computer Science, mastering programming fundamentals and gaining practical 
-                    experience with C#, Java, and Visual Studio. Post-college, I transitioned into freelancing, leveraging my skills in 
+                    experience with C#, Java, and Visual Studio.</p>
+                    <p className="text-element">Post-college, I transitioned into freelancing, leveraging my skills in 
                     website design and Webflow to create mobile-responsive, user-friendly websites with CMS capabilities for clients, which 
                     enhanced my ability to deliver tailored solutions, including custom animations and complex forms, effectively addressing 
                     client needs.</p>
