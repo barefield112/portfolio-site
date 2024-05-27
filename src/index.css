@@ -424,39 +424,41 @@ a:hover {
   .contact-text-content {
     width: 80%;
   }
-}
-
-
-@media (orientation: landscape){
-  .hero-content-wrapper{
-    gap:1rem;
-    padding-top: 8rem;
-  }
-  .hero-header{
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .about-image{
-    height: 50vh;
-    width: 50%;
-  }
-  .projects-grid-wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-  .project-item{
-    height: 90vh;
-    width:auto;
-  }
-  .project-img{
-    height: 50vh;
-  }
-    .projects-container {
-      padding: 1.4rem;
+  @media (orientation: landscape){
+    .hero-content-wrapper{
+      gap:1rem;
+      padding-top: 8rem;
     }
-  
+    .hero-header{
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+    .about-image{
+      height: 50vh;
+      width: 50%;
+    }
+    .projects-grid-wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .project-item{
+      height: 90vh;
+      max-height: 25rem;
+      width:auto;
+    }
+    .project-img{
+      height: 50vh;
+    }
+      .projects-container {
+        padding: 1.4rem;
+      }
+    
+  }
 }
+
+
+
 @media (max-width: 520px) {
   :root {
     --font-size-base: 1rem;
