@@ -9,8 +9,7 @@ function Contact(){
             <div className="contact-text-content">
                 <h2 className="section-header iswhite">Contact Me</h2>
                 <p>I am excited to dive into the work of a full time front end developer. 
-                    Even more than that I am eager to learn and grow with your company. Fill out the form if you beleive Im a good fit 
-                    for your company</p>
+                    Even more than that I am eager to learn and grow with your company. Reach out and I would love to discuss joining your team.</p>
                 <ul>
                 <li>Email: <a href="mailto:gagebarefield12@gmail.com">gagebarefield12@gmail.com</a></li>
                 <li>Number: <a href="tel:785-280-2756">785-280-2756</a></li>
